@@ -21,7 +21,7 @@ def create_item(name, icon, keyword, description, on_enter):
             name=name,
             description=description,
             icon=get_icon_path(icon, ExtensionResultItem.ICON_SIZE),
-            on_enter=RunScriptAction(on_enter),
+            on_enter=RunScriptAction(on_enter, None),
             #            on_enter=RunScriptAction('xfce4-session-logout --{}'.format(on_enter), None),
         )
     )
