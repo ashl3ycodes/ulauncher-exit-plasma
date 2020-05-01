@@ -1,18 +1,18 @@
 {
   "required_api_version": "^2.0.0",
-  "name": "Exit XFCE",
-  "description": "Session logout functions for XFCE desktop.",
-  "developer_name": "leiserfg",
+  "name": "Exit Plasma",
+  "description": "Session logout functions for Plasma desktop.",
+  "developer_name": "leiserfg, CactiChameleon9",
   "icon": "images/exit.png",
   "options": {
     "query_debounce": 0.1
   },
   "preferences": [
     {
-      "id": "xfce_ext",
+      "id": "plasma_ext",
       "type": "keyword",
-      "name": "Exit XFCE",
-      "description": "Session logout functions for XFCE desktop.",
+      "name": "Exit Plasma",
+      "description": "Session logout functions for Plasma desktop.",
       "default_value": "exit"
     }
   ]
