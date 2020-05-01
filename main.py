@@ -33,11 +33,11 @@ class XFCESessionExtension(Extension):
 
 
 items_cache = [
-    create_item('Logout', 'xfsm-logout', 'logout', 'Session logout', 'kate'),
-    create_item('Reboot', 'xfsm-reboot', 'reboot', 'Reboot computer', 'reboot'),
-    create_item('Shutdown', 'xfsm-shutdown', 'shutdown', 'Shutdown computer', 'halt'),
-    create_item('Suspend', 'xfsm-suspend', 'suspend', 'Suspend computer', 'suspend'),
-    create_item('Hibernate', 'xfsm-hibernate', 'hibernate', 'Hibernate computer', 'hibernate'),
+    create_item('Logout', 'xfsm-logout', 'logout', 'Session logout', 'qdbus org.kde.ksmserver /KSMServer logout 0 3 3'),
+    create_item('Reboot', 'xfsm-reboot', 'reboot', 'Reboot computer', 'qdbus org.kde.ksmserver /KSMServer logout 0 1 3'),
+    create_item('Shutdown', 'xfsm-shutdown', 'shutdown', 'Shutdown computer', 'qdbus org.kde.ksmserver /KSMServer logout 0 2 3'),
+    #create_item('Suspend', 'xfsm-suspend', 'suspend', 'Suspend computer', 'suspend'),
+    #create_item('Hibernate', 'xfsm-hibernate', 'hibernate', 'Hibernate computer', 'hibernate'),
 ]
 
 
