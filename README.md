@@ -6,7 +6,7 @@ You can do session actions like reboot/logout/shutdown via typing "exit".
 
 
 
-Massive thanks to leiserfg for the original script
+Massive thanks to leiserfg for the original script - nearly all of the code here!!!!
 
 
 
