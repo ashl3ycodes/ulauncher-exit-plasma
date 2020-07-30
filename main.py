@@ -36,8 +36,12 @@ items_cache = [
     create_item('Logout', 'xfsm-logout', 'logout', 'Session logout', 'qdbus org.kde.ksmserver /KSMServer logout 0 3 3'),
     create_item('Reboot', 'xfsm-reboot', 'reboot', 'Reboot computer', 'qdbus org.kde.ksmserver /KSMServer logout 0 1 3'),
     create_item('Shutdown', 'xfsm-shutdown', 'shutdown', 'Shutdown computer', 'qdbus org.kde.ksmserver /KSMServer logout 0 2 3'),
-    create_item('Suspend', 'xfsm-suspend', 'suspend', 'Suspend computer', 'dbus-send --system --print-reply --dest="org.freedesktop.UPower" /org/freedesktop/UPower org.freedesktop.UPower.Suspend'),
-    create_item('Hibernate', 'xfsm-hibernate', 'hibernate', 'Hibernate computer', 'dbus-send --system --print-reply --dest="org.freedesktop.UPower" /org/freedesktop/UPower org.freedesktop.UPower.Suspend'),
+
+    # https://askubuntu.com/questions/1792/how-can-i-suspend-hibernate-from-command-line/131022#131022
+    # https://www.freedesktop.org/wiki/Software/systemd/logind/
+    # https://askubuntu.com/questions/652978/how-to-create-keyboard-shortcut-which-initiates-suspend
+    create_item('Suspend', 'xfsm-suspend', 'suspend', 'Suspend computer', 'dbus-send --system --print-reply --dest="org.freedesktop.login1" /org/freedesktop/login1 org.freedesktop.login1.Manager.Suspend boolean:true'),
+    create_item('Hibernate', 'xfsm-hibernate', 'hibernate', 'Hibernate computer', 'dbus-send --system --print-reply --dest="org.freedesktop.login1" /org/freedesktop/login1 org.freedesktop.login1.Manager.Hibernate boolean:true'),
 ]
 
 
