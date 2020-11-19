@@ -1,3 +1,4 @@
+This fork from srithon has been updated to include more exit options: https://github.com/srithon/ulauncher-exit-plasma
 A Plasma extension for the [ulauncher](https://ulauncher.io/).
 
 You can do session actions like reboot/logout/shutdown via typing "exit".
