@@ -5,7 +5,7 @@
   "developer_name": "leiserfg & CactiChameleon9",
   "icon": "images/exit.png",
   "options": {
-    "query_debounce": 0.1
+    "query_debounce": 0
   },
   "preferences": [
     {
