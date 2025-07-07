@@ -1,8 +1,8 @@
 {
   "required_api_version": "^2.0.0",
-  "name": "Exit Plasma",
-  "description": "Session logout functions for Plasma desktop.",
-  "developer_name": "leiserfg & CactiChameleon9",
+  "name": "Sesión de Plasma",
+  "description": "Opciones de sesión de Plasma.",
+  "developer_name": "leiserfg, CactiChameleon9 & ashl3ycodes",
   "icon": "images/exit.png",
   "options": {
     "query_debounce": 0
@@ -11,8 +11,8 @@
     {
       "id": "plasma_ext",
       "type": "keyword",
-      "name": "Exit Plasma",
-      "description": "Session logout functions for Plasma desktop.",
+      "name": "Sesión de Plasma",
+      "description": "Opciones de sesión de Plasma.",
       "default_value": "exit"
     }
   ]
