@@ -13,7 +13,7 @@
       "type": "keyword",
       "name": "Sesión de Plasma",
       "description": "Opciones de sesión de Plasma.",
-      "default_value": "exit"
+      "default_value": "sesion"
     }
   ]
 }
