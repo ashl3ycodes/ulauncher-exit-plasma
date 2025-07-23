@@ -32,10 +32,10 @@ class XFCESessionExtension(Extension):
 
 
 items_cache = [
-    create_item('Reiniciar', 'system-reboot', 'reboot', 'Reiniciar el equipo.', 'systemctl reboot'),
-    create_item('Apagar', 'system-shutdown', 'shutdown', 'Apagar el equipo.', 'systemctl poweroff'),
-    create_item('Suspender', 'system-suspend', 'suspend', 'Poner el equipo en estado de suspensión.', 'systemctl suspend'),
-    create_item('Hibernar', 'system-suspend-hibernate', 'hibernate', 'Poner el equipo a hibernar.', 'systemctl hibernate'),
+    create_item('Reiniciar', 'system-reboot', 'reiniciar', 'Reiniciar el equipo.', 'systemctl reboot'),
+    create_item('Apagar', 'system-shutdown', 'apagar', 'Apagar el equipo.', 'systemctl poweroff'),
+    create_item('Suspender', 'system-suspend', 'suspender', 'Poner el equipo en estado de suspensión.', 'systemctl suspend'),
+    create_item('Hibernar', 'system-suspend-hibernate', 'hibernar', 'Poner el equipo a hibernar.', 'systemctl hibernate'),
 ]
 
 
