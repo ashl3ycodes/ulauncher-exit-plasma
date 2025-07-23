@@ -1,18 +1,13 @@
-## A Plasma extension for the [ulauncher](https://ulauncher.io/).
-
-You can do session actions like reboot/logout/shutdown/suspend/hibernate via typing "exit".
-
-![extension screenshot](http://i.imgur.com/vnxtMtt.png)
-
-
-
-Massive thanks to [leiserfg](https://github.com/leiserfg) for the original script - nearly all of the code here!!!!
-
-
-
-
-Thanks to Rog131 on https://forum.kde.org/viewtopic.php?t=135065 for pointing out:
-
-https://api.kde.org/4.x-api/kde-workspace-apidocs/plasma-workspace/libkworkspace/html/namespaceKWorkSpace.html
-
-Also thanks to [srithon](https://github.com/srithon) for the hibernation and suspension, and allowing to merge his fork upstream
+# Ulauncher Exit Plasma
+Extensión de [Ulauncher](https://ulauncher.io) basada en [ulauncher-exit-plasma](https://github.com/CactiChameleon9/ulauncher-exit-plasma), con el propósito de gestionar la sesión de KDE Plasma desde Ulauncher.
+## 📝 ⦁ Cambios
+<div>
+  <ul>
+   	<li>Cambio de ícono de la extensión (<a href="https://github.com/ashl3ycodes/ulauncher-exit-plasma"><img src="https://raw.githubusercontent.com/CactiChameleon9/ulauncher-exit-plasma/refs/heads/master/images/exit.png" width="12" height="12" alt="image"></a> ➡ <a href="https://github.com/ashl3ycodes/ulauncher-exit-plasma"><img src="https://raw.githubusercontent.com/ashl3ycodes/ulauncher-exit-plasma/refs/heads/master/images/exit.png" width="12" height="12" alt="image"></a>).</li>
+   	<li>Cambio de comandos (<code>qdbus</code> ➡ <code>systemctl</code>).</li> 
+   	<li>Traducción del Inglés al Español</li>
+</ul>
+</div>
+<div style="text-align: center;">
+  <img align="center" src="https://i.ibb.co/C5NYjNY4/image.png" alt="image" style="width: 50%;"/>
+</div>
