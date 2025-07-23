@@ -22,7 +22,6 @@ def create_item(name, icon, keyword, description, on_enter):
             description=description,
             icon=get_icon_path(icon, ExtensionResultItem.ICON_SIZE),
             on_enter=RunScriptAction(on_enter, None),
-            #            on_enter=RunScriptAction('xfce4-session-logout --{}'.format(on_enter), None),
         )
     )
 
@@ -33,15 +32,10 @@ class XFCESessionExtension(Extension):
 
 
 items_cache = [
-    create_item('Cerrar Sesión', 'system-log-out', 'logout', 'Cerrar la sesión actual de Plasma.', 'qdbus org.kde.ksmserver /KSMServer logout 0 3 3'),
-    create_item('Reiniciar', 'system-reboot', 'reboot', 'Reiniciar el equipo.', 'qdbus org.kde.ksmserver /KSMServer logout 0 1 3'),
-    create_item('Apagar', 'system-shutdown', 'shutdown', 'Apagar el equipo.', 'qdbus org.kde.ksmserver /KSMServer logout 0 2 3'),
-
-    # https://askubuntu.com/questions/1792/how-can-i-suspend-hibernate-from-command-line/131022#131022
-    # https://www.freedesktop.org/wiki/Software/systemd/logind/
-    # https://askubuntu.com/questions/652978/how-to-create-keyboard-shortcut-which-initiates-suspend
-    create_item('Suspender', 'system-suspend', 'suspend', 'Poner el equipo en estado de suspensión.', 'dbus-send --system --print-reply --dest="org.freedesktop.login1" /org/freedesktop/login1 org.freedesktop.login1.Manager.Suspend boolean:true'),
-    create_item('Hibernar', 'system-suspend-hibernate', 'hibernate', 'Poner el equipo a hibernar.', 'dbus-send --system --print-reply --dest="org.freedesktop.login1" /org/freedesktop/login1 org.freedesktop.login1.Manager.Hibernate boolean:true'),
+    create_item('Reiniciar', 'system-reboot', 'reboot', 'Reiniciar el equipo.', 'systemctl reboot'),
+    create_item('Apagar', 'system-shutdown', 'shutdown', 'Apagar el equipo.', 'systemctl poweroff'),
+    create_item('Suspender', 'system-suspend', 'suspend', 'Poner el equipo en estado de suspensión.', 'systemctl suspend'),
+    create_item('Hibernar', 'system-suspend-hibernate', 'hibernate', 'Poner el equipo a hibernar.', 'systemctl hibernate'),
 ]
 
 
